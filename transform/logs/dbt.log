@@ -30,3 +30,31 @@ Happy modeling!
 [0m16:12:35.685330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5eb440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e7f7830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f37fd70>]}
 [0m16:12:35.685775 [debug] [MainThread]: Flushing usage events
 [0m16:12:36.100341 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:22:49.219231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2023c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c585f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c58980>]}
+
+
+============================== 14:22:49.227926 | 4269fc66-43f1-4091-b423-a97d120bddb0 ==============================
+[0m14:22:49.227926 [info ] [MainThread]: Running with dbt=1.9.3
+[0m14:22:49.228725 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/hesam/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init pypi_metrics', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:22:49.262507 [info ] [MainThread]: A project called pypi_metrics already exists here.
+[0m14:22:49.265378 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.17855991, "process_in_blocks": "0", "process_kernel_time": 0.485996, "process_mem_max_rss": "88317952", "process_out_blocks": "0", "process_user_time": 1.759054}
+[0m14:22:49.266081 [debug] [MainThread]: Command `dbt init` succeeded at 14:22:49.265896 after 0.18 seconds
+[0m14:22:49.266638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a859b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a27bb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a86ad20>]}
+[0m14:22:49.267131 [debug] [MainThread]: Flushing usage events
+[0m14:22:50.787866 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:52:45.174515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111e37a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d8ffe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d8ff50>]}
+
+
+============================== 11:52:45.183076 | 63ec196e-4daf-4ad6-ba19-ab1163b5f57a ==============================
+[0m11:52:45.183076 [info ] [MainThread]: Running with dbt=1.9.3
+[0m11:52:45.184291 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/hesam/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --threads 1 --target dev', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:52:45.185510 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/hesam/Desktop/codes/dbt-duckdb/transform/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:52:45.189371 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.15053001, "process_in_blocks": "0", "process_kernel_time": 0.648721, "process_mem_max_rss": "89247744", "process_out_blocks": "0", "process_user_time": 2.011697}
+[0m11:52:45.190983 [debug] [MainThread]: Command `dbt run` failed at 11:52:45.190771 after 0.15 seconds
+[0m11:52:45.191598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111e37a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d8fef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d8f920>]}
+[0m11:52:45.192347 [debug] [MainThread]: Flushing usage events
+[0m11:52:45.547632 [debug] [MainThread]: An error was encountered while trying to flush usage events

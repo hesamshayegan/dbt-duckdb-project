@@ -1,0 +1,11 @@
+pypi_metrics:
+  outputs:
+    dev:
+      type: duckdb
+      path: dev.duckdb
+    prod:
+      type: duckdb
+      path: prod.duckdb
+      threads: 4
+      
+  target: dev

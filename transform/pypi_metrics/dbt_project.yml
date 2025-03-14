@@ -26,5 +26,4 @@ models:
   pypi_metrics:
     daily_stats:
       +materliazied: table
-    example:
-      +materialized: view
+      +post-hook: "{% if target.name == 'dev' %}{{ export_partition_data('download_date', this.name ) }}{% endif %}"

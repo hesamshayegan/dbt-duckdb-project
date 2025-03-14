@@ -16,8 +16,8 @@ WITH pre_aggregated_data AS (
                 SPLIT_PART(details.python, '.', 2)
             )
         END AS python_version
-    -- FROM {{ source('external_source', 'pypi_file_downloads') }}
-    FROM 's3://us-prd-motherduck-open-datasets/pypi/sample_tutorial/pypi_file_downloads/*/*/*.parquet'
+    FROM {{ source('external_source', 'pypi_file_downloads') }}
+    -- FROM dbt_unit_testing('s3://us-prd-motherduck-open-datasets/pypi/sample_tutorial/pypi_file_downloads/*/*/*.parquet')
     -- filtering
     WHERE
         download_date >= '{{ var("start_date") }}'
